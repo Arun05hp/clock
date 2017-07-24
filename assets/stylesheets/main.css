@@ -1,0 +1,50 @@
+html{
+	
+	font-family:'helvetica neue';
+	text-align: center;
+	font-size: 10px;
+}
+body{
+	background-image:url(../images/img.jpg);
+	background-size:cover;
+	margin:0;
+	font-size:2rem;
+	display:flex;
+	flex:1;
+	min-height: 100vh;
+	align-items: center;
+}
+.clock{
+	width:30rem;
+	height: 30rem;
+	border:20px solid #73D3F0;
+	border-radius:50%;
+	margin:50px auto;
+	position: relative;
+	padding: 2rem;
+    box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+}
+.clock-face {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: translateY(-3px);
+}
+
+.hand {
+	width: 50%;
+	height: 6px;
+	background: -moz-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(220,228,233,1) 12%, rgba(216,225,231,1) 14%, rgba(149,224,172,1) 44%, rgba(49,222,83,1) 89%, rgba(224,239,249,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,246,248,1)), color-stop(12%, rgba(220,228,233,1)), color-stop(14%, rgba(216,225,231,1)), color-stop(44%, rgba(149,224,172,1)), color-stop(89%, rgba(49,222,83,1)), color-stop(100%, rgba(224,239,249,1)));
+background: -webkit-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(220,228,233,1) 12%, rgba(216,225,231,1) 14%, rgba(149,224,172,1) 44%, rgba(49,222,83,1) 89%, rgba(224,239,249,1) 100%);
+	position: absolute;
+	top: 50%;
+	transform-origin:100%;
+	transform:rotate(90deg);
+	transition: all 0.05s;
+	transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+}
